@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header{
+  background-color: #31343d;
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+header h1{
+  background-color: #92cccd;
+  padding: 7px;
+  padding-left: 150px;
+  font-size: 50px;
+  color: #31343d;
+}
+nav ul{
+  display: flex;
+  padding-right: 100px;
+  font-size: 25px
+}
+nav ul li, nav ul li a{
+  list-style: none;
+  color: #92cccd;
+  padding: 0 15px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 5px;
+  cursor: pointer;
+}
+.hero-banner{
+  background-image: linear-gradient(to bottom, rgba(0, 157, 248, 0.52), rgba(19, 42, 117, 0.73)),
+  url('../images/02-hero-bg.jpg');
+  height: 340px;
+  background-size: cover;
+  overflow: hidden;
+}
+.hero-banner h2{
+  background-color: #92cccd;
+  padding: 7px;
+  text-align: center;
+  margin-left: 70%;
+  font-size: 40px;
+  margin-top: 200px;
+  color: #31343d;
+  margin-right: 50px;
+}
+.page-wrapper{
+  margin: 0 15%;
+  max-width: 1300px;
+  justify-content: center;
+  align-items: center;
+}
+.page-section h2{
+  font-size: 60px;
+  text-align: right;
+  color: #445876;
+}
+.section-title{
+  width: 70%;
+  padding-right: 15px;
+}
+.page-section{
+  padding: 50px 0;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+.page-section p, .section-images{
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 4px solid #445876;
+  color: #445876;
+}
+.section-images .fullsize img, .section-images .smallsize img{ 
+  border: 5px #92cccd solid;
+  cursor: pointer;
+}
+.section-images .fullsize img{
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+.section-images .smallsize{
+  margin-right: -10px;
+}
+.section-images .smallsize img{
+  width: 49%;
+  height: 150px;
+  margin: 2px;
+  object-fit: cover;
+  justify-content: space-between;
+}
+.section-images .fullsize img:hover, .section-images .smallsize img:hover{ 
+  background: rgba(0, 157, 248, 0.52);
+}
+.contact-details{
+  display: flex;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  border-left: 4px solid #31343d;
+  justify-content: space-between;
+  width: 300%;
+}
+.contact-details h3 a{
+  padding: 0 15px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 5px;
+  cursor: pointer;
+  color: #445876;
+}
+.text, .section-images{
+  width: 300%;
+}
+.image-info{
+  position: absolute;
+  margin-top: -110px;
+  background-color: #92cccd;
+  padding: 15px 40px;
+  font-weight: 900;
+  font-size: 30px;
+}
